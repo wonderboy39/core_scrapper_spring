@@ -161,14 +161,22 @@
 			<version>2.0.2</version>
 		</dependency>
 		
-		<!-- JSON 설정 -->
+		<!-- JSON 설정  -->
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
 		    <groupId>com.fasterxml.jackson.core</groupId>
 		    <artifactId>jackson-databind</artifactId>
 		    <version>2.9.5</version>
 		</dependency>
-		        
+		
+		<!-- log4j 설정 -->
+		<!-- https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4.1 -->
+		<dependency>
+		    <groupId>org.bgee.log4jdbc-log4j2</groupId>
+		    <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
+		    <version>1.16</version>
+		</dependency>
+        
 	</dependencies>
     <build>
         <plugins>

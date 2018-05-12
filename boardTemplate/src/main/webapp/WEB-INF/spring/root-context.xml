@@ -15,8 +15,8 @@
 	<context:component-scan base-package="com.spring.scrapper"></context:component-scan>
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="org.mariadb.jdbc.Driver" />
-		<property name="url" value="jdbc:mariadb://localhost:3306/scrapper" />
+		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" />
+		<property name="url" value="jdbc:log4jdbc:mariadb://localhost:3306/scrapper" />
 		<property name="username" value="scrapper" />
 		<property name="password" value="1111" />	
 	</bean>
