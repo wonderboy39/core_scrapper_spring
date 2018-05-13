@@ -16,7 +16,7 @@
 	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy" />
-		<property name="url" value="jdbc:log4jdbc:mariadb://localhost:3306/scrapper" />
+		<property name="url" value="jdbc:log4jdbc:mysql://localhost:3306/scrapper?useSSL=false&amp;serverTimezone=UTC" />
 		<property name="username" value="scrapper" />
 		<property name="password" value="1111" />	
 	</bean>
@@ -24,7 +24,7 @@
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource"/>
 		<property name="configLocation" value="classpath:config/mybatis-config.xml"/>
-		<property name="mapperLocations" value="classpath:sql/**/*.xml"/>
+		<property name="mapperLocations" value="classpath*:sql/**/*.xml"/>
 	</bean>
 	
 	<!-- id를 sqlSessionTemplate로 설정할 경우 어떻게 되는지 확인해볼 것  -->
