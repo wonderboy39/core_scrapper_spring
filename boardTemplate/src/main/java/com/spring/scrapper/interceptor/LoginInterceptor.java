@@ -25,7 +25,13 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
 		if(userVO != null){
 			session.setAttribute(LOGIN, userVO);
 			LOGGER.info("LOGIN SUCCESS ");
-			response.sendRedirect("/scrapper/");
+			String responseURL = "/scrapper";
+			
+			// AuthInterceptor의 preHandle이 끝나고 난 후에 대한 처리
+			if(session.getAttribute("beforeURL")!=null){
+				responseURL = (String) session.getAttribute("beforeURL");
+			}
+			response.sendRedirect(responseURL);
 		}
 		else{
 			LOGGER.info("LOGIN FAIL ");
