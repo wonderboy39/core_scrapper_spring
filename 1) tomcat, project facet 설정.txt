@@ -290,9 +290,10 @@ JSON 데이터 생성하는 경우를 위한 설정
 		@ResponseBody 어노테이션
 			요청(request) 문자열이 그대로 파라미터로 전달된다.
 
-
-
-
+-------
+login.jsp 작성
+loginPost.jsp 작성
+-------
 
 
 
