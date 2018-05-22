@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.scrapper.board.videoboard">
+	<select id="selectVideoBoardList" resultType="com.spring.scrapper.board.video.vo.VideoBoardVO">
+		SELECT * FROM video_board;
+	</select>
+	
+	<select id="selectVideoBoard" parameterType="java.util.Map" resultType="com.spring.scrapper.board.video.vo.VideoBoardVO">
+		SELECT * FROM video_board WHERE postId = #{postId}
+	</select>
+	
+	<insert id="insertIntoVideoBoard" parameterType="com.spring.scrapper.board.video.vo.VideoBoardVO">
+		INSERT INTO video_board(
+			content, writerId, createDate, deleteFlag
+		)
+		VALUES(
+			#{content}, #{writerId}, SYSDATE(), #{deleteFlag}
+		)
+	</insert>
+	
+	<update id="updateVideoBoard" parameterType="com.spring.scrapper.board.video.vo.VideoBoardVO">
+		UPDATE video_board
+		SET
+			content=#{content}, writerId=#{writerId}, 
+			createDate=#{createDate}, deleteFlag=#{deleteFlag}, modifyDate=SYSDATE()
+		WHERE id= #{postId}
+	</update>
+	
+	<delete id="deleteVideoBoard" parameterType="java.util.Map">
+		DELETE video_board
+		WHERE postId=#{postId}
+	</delete>
+</mapper>
