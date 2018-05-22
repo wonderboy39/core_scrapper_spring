@@ -12,8 +12,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.spring.scrapper.common.CommonDAO;
-import com.spring.scrapper.domain.user.dto.UserDTO;
-import com.spring.scrapper.domain.user.vo.UserVO;
+import com.spring.scrapper.user.dto.UserDTO;
+import com.spring.scrapper.user.vo.UserVO;
 import com.spring.scrapper.user.UserDAO;
 
 @RunWith(SpringJUnit4ClassRunner.class)

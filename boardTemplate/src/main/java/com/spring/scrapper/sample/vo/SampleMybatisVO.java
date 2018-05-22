@@ -1,4 +1,4 @@
-package com.spring.scrapper.domain.sample;
+package com.spring.scrapper.sample.vo;
 
 public class SampleMybatisVO{
 	private int oid;

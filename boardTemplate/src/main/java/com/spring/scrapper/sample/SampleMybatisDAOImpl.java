@@ -7,7 +7,7 @@ import javax.inject.Inject;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
-import com.spring.scrapper.domain.sample.SampleMybatisVO;
+import com.spring.scrapper.sample.vo.SampleMybatisVO;
 
 @Repository
 public class SampleMybatisDAOImpl implements SampleMybatisDAO{

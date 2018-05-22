@@ -9,8 +9,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.stereotype.Repository;
 
 
-import com.spring.scrapper.domain.user.dto.UserDTO;
-import com.spring.scrapper.domain.user.vo.UserVO;
+import com.spring.scrapper.user.dto.UserDTO;
+import com.spring.scrapper.user.vo.UserVO;
 
 @Repository
 public class UserDAOImpl implements UserDAO{

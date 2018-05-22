@@ -5,8 +5,8 @@ import javax.inject.Inject;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import com.spring.scrapper.domain.user.dto.UserDTO;
-import com.spring.scrapper.domain.user.vo.UserVO;
+import com.spring.scrapper.user.vo.UserVO;
+import com.spring.scrapper.user.dto.UserDTO;
 
 @Service
 public class UserServiceImpl implements UserService{

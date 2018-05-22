@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.spring.scrapper.domain.user.dto.UserDTO;
-import com.spring.scrapper.domain.user.vo.UserVO;
+import com.spring.scrapper.user.dto.UserDTO;
+import com.spring.scrapper.user.vo.UserVO;
 
 @Controller
 @RequestMapping("/user")
